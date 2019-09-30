@@ -1,31 +1,21 @@
-User Inputs: movie-this, star,wars
-Outputs: 
+
+---------------------------------------------
+User Inputs: movie-this, beethoven
+Output:
 -----------------
-Title:                  Star Wars: Episode IV - A New Hope
-Year Released:          1977
-IMDB Rating:            8.6
-Rotton Tomatoes Rating: 93%
+Title:                  Beethoven
+Year Released:          1992
+IMDB Rating:            5.6
+Rotton Tomatoes Rating: 33%
 Country produced:       USA
 Language:               English
-Plot:                   Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
-Actor:                  Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
------------------
-User Inputs: movie-this, star wars
-Outputs: 
------------------
-Title:                  Star Wars: Episode IV - A New Hope
-Year Released:          1977
-IMDB Rating:            8.6
-Rotton Tomatoes Rating: 93%
-Country produced:       USA
-Language:               English
-Plot:                   Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
-Actor:                  Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+Plot:                   A slobbering St. Bernard becomes the center of attention for a loving family, but must contend with a dog-napping veterinarian and his henchmen.
+Actor:                  Charles Grodin, Bonnie Hunt, Dean Jones, Nicholle Tom
 -----------------
 
-
+---------------------------------------------
 User Inputs: concert-this, bush
-Outputs: 
+Output:
 -----------------
 Your Artist: Bush
 Name of Venue: North Island Credit Union Ampitheatre
@@ -33,23 +23,6 @@ Venue Location: Chula Vista, CA
 Date of the Event: 10/10/2019  7:00 pm
 -----------------
 
-Outputs: 
------------------
-Your Artist: Bush
-Name of Venue: Hard Rock Hotel Las Vegas
-Venue Location: Las Vegas, NV
-Date of the Event: 10/11/2019  8:00 pm
------------------
-
-Outputs: 
------------------
-Your Artist: Bush
-Name of Venue: Veterans Memorial Coliseum
-Venue Location: Portland, OR
-Date of the Event: 10/15/2019  7:00 pm
------------------
-
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: USANA Amphitheatre
@@ -57,7 +30,20 @@ Venue Location: West Valley City, UT
 Date of the Event: 10/12/2019  7:30 pm
 -----------------
 
-Outputs: 
+-----------------
+Your Artist: Bush
+Name of Venue: Hard Rock Hotel Las Vegas
+Venue Location: Las Vegas, NV
+Date of the Event: 10/11/2019  8:00 pm
+-----------------
+
+-----------------
+Your Artist: Bush
+Name of Venue: Veterans Memorial Coliseum
+Venue Location: Portland, OR
+Date of the Event: 10/15/2019  7:00 pm
+-----------------
+
 -----------------
 Your Artist: Bush
 Name of Venue: ShoWare Center
@@ -65,7 +51,6 @@ Venue Location: Kent, WA
 Date of the Event: 10/16/2019  7:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Grand Theatre at Grand Sierra Resort
@@ -73,7 +58,6 @@ Venue Location: Reno, NV
 Date of the Event: 10/19/2019  8:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: The ALTimate Tour
@@ -81,7 +65,6 @@ Venue Location: Temecula, CA
 Date of the Event: 10/20/2019  7:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Comerica Theatre
@@ -89,7 +72,6 @@ Venue Location: Phoenix, AZ
 Date of the Event: 10/21/2019  7:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: H-E-B Center at Cedar Park
@@ -97,7 +79,6 @@ Venue Location: Cedar Park, TX
 Date of the Event: 10/23/2019  7:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Dos Equis Pavilion
@@ -105,7 +86,6 @@ Venue Location: Dallas, TX
 Date of the Event: 10/25/2019  4:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: The Cynthia Woods Mitchell Pavilion presented by Huntsman
@@ -113,7 +93,6 @@ Venue Location: The Woodlands, TX
 Date of the Event: 10/26/2019  2:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Peter Barclay Field
@@ -121,7 +100,6 @@ Venue Location: Tuncurry,
 Date of the Event: 04/03/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Parramatta Park - The Crescent
@@ -129,7 +107,6 @@ Venue Location: Parramatta,
 Date of the Event: 04/04/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: The Entertainment Grounds
@@ -137,7 +114,6 @@ Venue Location: West Gosford,
 Date of the Event: 04/05/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Stuart Park
@@ -145,7 +121,6 @@ Venue Location: North Wollongong,
 Date of the Event: 04/09/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Hastings Foreshore Reserve
@@ -153,7 +128,6 @@ Venue Location: Hastings,
 Date of the Event: 04/11/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Yarrawong Showgrounds
@@ -161,7 +135,6 @@ Venue Location: Yarrawonga,
 Date of the Event: 04/12/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Bonython Park
@@ -169,7 +142,6 @@ Venue Location: Adelaide,
 Date of the Event: 04/13/2020  3:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: HBF Stadium
@@ -177,7 +149,6 @@ Venue Location: Mt Claremont,
 Date of the Event: 04/15/2020  5:45 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Sunshine Coast Stadium
@@ -185,7 +156,6 @@ Venue Location: Bokarina,
 Date of the Event: 04/17/2020  3:30 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Riverstage Brisbane
@@ -193,334 +163,9 @@ Venue Location: Brisbane,
 Date of the Event: 04/18/2020  1:00 pm
 -----------------
 
-Outputs: 
 -----------------
 Your Artist: Bush
 Name of Venue: Foreshore Park
 Venue Location: Newcastle East, 
 Date of the Event: 04/19/2020  2:00 pm
------------------
-
-
-User Inputs: spotify-this-song, shake it off
-Outputs: 
------------------
-Artist:  Taylor Swift
-Song:    Shake It Off
-Preview: null
-Album:   1989 (Deluxe Edition)
------------------
-
-Outputs: 
------------------
-Artist:  Mariah Carey
-Song:    Shake It Off
-Preview: null
-Album:   The Emancipation of Mimi
------------------
-
-Outputs: 
------------------
-Artist:  Taylor Swift
-Song:    Shake It Off
-Preview: null
-Album:   1989
------------------
-
-Outputs: 
------------------
-Artist:  Kidz Bop Kids
-Song:    Shake It Off
-Preview: null
-Album:   Kidz Bop 27
------------------
-
-Outputs: 
------------------
-Artist:  Taylor Swift
-Song:    Shake It Off
-Preview: null
-Album:   1989 (Big Machine Radio Release Special)
------------------
-
-Outputs: 
------------------
-Artist:  Kidz Bop Kids
-Song:    Shake It Off
-Preview: null
-Album:   KIDZ BOP Greatest Hits!
------------------
-
-Outputs: 
------------------
-Artist:  Steve Petrunak
-Song:    Chandelier (Instrumental Version)
-Preview: https://p.scdn.co/mp3-preview/5e08142003b8b01428e7a2fe042c4ed11468b97f?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off: Instrumental Guitar Covers of Pop Hits
------------------
-
-Outputs: 
------------------
-Artist:  Mariah Carey
-Song:    Shake It Off
-Preview: null
-Album:   The Emancipation of Mimi
------------------
-
-Outputs: 
------------------
-Artist:  William Singe
-Song:    Shake It Off
-Preview: https://p.scdn.co/mp3-preview/ee9bbce1eba12a81ee8d6cab6bcf0600392914d4?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off
------------------
-
-Outputs: 
------------------
-Artist:  Ryan Adams
-Song:    Shake It Off
-Preview: null
-Album:   1989
------------------
-
-Outputs: 
------------------
-Artist:  Steve Petrunak
-Song:    Cool Kids (Instrumental Version)
-Preview: https://p.scdn.co/mp3-preview/b5b3722315bcc0b1ddd29c2e2dedf2f63ced1d53?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off: Instrumental Guitar Covers of Pop Hits
------------------
-
-Outputs: 
------------------
-Artist:  Steve Petrunak
-Song:    Rude (Instrumental Version)
-Preview: https://p.scdn.co/mp3-preview/449a5c998c705bacc9e1479183086a7333f346cc?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off: Instrumental Guitar Covers of Pop Hits
------------------
-
-Outputs: 
------------------
-Artist:  Scott Bradlee's Postmodern Jukebox
-Song:    Shake It Off
-Preview: https://p.scdn.co/mp3-preview/2694ae752754ff520ac49a79b5935a3817829fe4?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Selfies on Kodachrome
------------------
-
-Outputs: 
------------------
-Artist:  Pickin' On Series
-Song:    Shake It Off
-Preview: https://p.scdn.co/mp3-preview/bfed641c0921ebcc8279df065d55ada639fa1de4?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pickin' on Taylor Swift Volume 2
------------------
-
-Outputs: 
------------------
-Artist:  Wilco
-Song:    Shake It Off
-Preview: https://p.scdn.co/mp3-preview/a983cfdfec7de2cacbec097388ed8319ff027b3b?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Sky Blue Sky
------------------
-
-Outputs: 
------------------
-Artist:  Steve Petrunak
-Song:    Maps (Instrumental Version)
-Preview: https://p.scdn.co/mp3-preview/52ebf962e8b8b9207f6dfc944593ea2770fdaf9e?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off: Instrumental Guitar Covers of Pop Hits
------------------
-
-Outputs: 
------------------
-Artist:  LA Nightcore
-Song:    Shake It Off (Nightcore Version)
-Preview: https://p.scdn.co/mp3-preview/f1023a81b7bc4cfb91c2558ffa6b0cff5cbdd042?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off (Nightcore Version)
------------------
-
-Outputs: 
------------------
-Artist:  Steve Petrunak
-Song:    Try (Instrumental Version)
-Preview: https://p.scdn.co/mp3-preview/6668490f442cee4159111b787c35d03ed8c0bbd0?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Shake It Off: Instrumental Guitar Covers of Pop Hits
------------------
-
-Outputs: 
------------------
-Artist:  Nick Kroll
-Song:    Shake It Off - From "Sing" Original Motion Picture Soundtrack
-Preview: null
-Album:   Sing (Original Motion Picture Soundtrack / Deluxe)
------------------
-
-Outputs: 
------------------
-Artist:  Simply Three
-Song:    Shake It Off
-Preview: https://p.scdn.co/mp3-preview/1c31dda5205ae2dc54d7cc2efd84eff312de2b70?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Volume 3
------------------
-
-
-User Inputs: spotify-this-song, elderly woman behind the counter in a small town
-Outputs: 
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter in a Small Town (Remastered)
-Preview: https://p.scdn.co/mp3-preview/b82ade2886065e67171e382ee804f0559628264d?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Vs.
------------------
-
-Outputs: 
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter in a Small Town - Acoustic Version
-Preview: https://p.scdn.co/mp3-preview/d0645a207259ef589e29859d9c32b9b5407c58c1?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   go
------------------
-
-Outputs: 
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter In a Small Town - Live at Coral Sky Amphitheatre, West Palm Beach, FL - September 1998
-Preview: https://p.scdn.co/mp3-preview/2ae1d71900ce62db9babbb08a1283aa0677575f7?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Live On Two Legs
------------------
-
-Outputs: 
------------------
-Artist:  Twinkle Twinkle Little Rock Star
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/852cef96dab62eb61e3abc50e8d48f06a30763a0?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Lullaby Versions of Pearl Jam
------------------
-
-Outputs: 
------------------
-Artist:  Charlotte Martin
-Song:    Elderly Woman Behind the Counter In a Small Town - Studio
-Preview: https://p.scdn.co/mp3-preview/a7ffcef06fb484502c34b1567153de7bdc9ec120?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Reproductions
------------------
-
-Outputs: 
------------------
-Artist:  Vitamin String Quartet
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/06e77cb11c737984af342926cb27b0cfe5337253?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Mad World: Strung Out On Pearl Jam
------------------
-
-Outputs: 
------------------
-Artist:  Vitamin String Quartet
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/2a1e07a142f0cdee370a288cf867fae9c6f5773f?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   VSQ Performs Pearl Jam
------------------
-
-Outputs: 
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Les Tout - Petits Ecoutent Pearl Jam
------------------
-
-Outputs: 
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind The Counter In A Small Town - Live
-Preview: null
-Album:   Let's Play Two (Live / Original Motion Picture Soundtrack)
------------------
-
-Outputs: 
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/9465e1f7ffa265adb0e01769747013533791418b?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Babies Go Pearl Jam
------------------
-
-Outputs: 
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/b52cd2197abc249f15f2aa98fbdc72f82dc20ed4?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   rearviewmirror (greatest hits 1991-2003)
------------------
-
-Outputs: 
------------------
-Artist:  Tony Hubbard
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/87d752ec875e1967341403769c00e421cb8eca0d?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Elderly Woman Behind the Counter in a Small Town
------------------
-
-Outputs: 
------------------
-Artist:  Tom Hummer
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/2fb4a8ef05e7e8b7b951419b6b3bb7b5abccb417?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Dedications (Covers)
------------------
-
-Outputs: 
------------------
-Artist:  The Belle Weather
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/f88b4510e8dc63638759553cd5fa8711afdba63f?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Don't Let Your Blood Run Still
------------------
-
-Outputs: 
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Per I Bambini
------------------
-
-Outputs: 
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Para bebês
------------------
-
-Outputs: 
------------------
-Artist:  Piano Tribute Players
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/e76243cef7f09980cb84eb5211a021a14f012199?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Piano Tribute To Pearl Jam
------------------
-
-Outputs: 
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Für Babys
------------------
-
-Outputs: 
------------------
-Artist:  Smooth Times
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/746ac2b732eb17e2459912adfe00dfcddfacf9e5?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Smooth Times Play Pearl Jam Chill Out
------------------
-
-Outputs: 
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/9465e1f7ffa265adb0e01769747013533791418b?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Para Bebes
 -----------------

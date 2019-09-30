@@ -5,39 +5,160 @@ let Spotify = require('node-spotify-api');
 const spotify = new Spotify(keys.spotify);
 const axios = require("axios");
 const moment = require('moment');
-
+const inquirer = require('inquirer');
 let output;
+let choice;
 
-let command = process.argv[2];
+let command;
 let parameter;
 
-let parameterInput = process.argv.slice(3).join(' ');
 
 
-switchCase1();
+console.log("Hi!  I'm Liri!  I can help you with a few search requests. \n");
+
+inquirer
+    .prompt([
+        {
+            type: "list",
+            message: "Which of the following would you want me to help you with? \n",
+            choices:[
+                "Find a concert",
+                "Research a movie",
+                "Find a song on Spotify",
+                "Read command from text file"
+            ],
+            name: 'selection'
+        }
+    ])
+    .then(function(inquirerResponse){
+        choice = inquirerResponse.selection;
+        switchChoice();  
+    })
 
 
-function switchCase1(){
-    switch (command){
-        case 'concert-this':
-            parameter = process.argv.slice(3).join('%20');
+
+function switchChoice(){
+    switch (choice){
+        case "Find a concert":
+            command = 'concert-this';
+            inquirer
+            .prompt([
+                {
+                    type: 'input',
+                    message: "What band or artist do you want to see?",
+                    name: 'artist'
+                }
+            ]).then(function(inquirerResponse){
+                parameter = inquirerResponse.artist.replace(' ','%20');
+                logInput();
+            });
             break;
 
-        case 'spotify-this-song':
-            parameter = process.argv.slice(3).join('+')
+        case "Find a song on Spotify":
+            command = 'spotify-this-song';
+            inquirer
+            .prompt([
+                {
+                    type: 'input',
+                    message: "What song are you looking for?",
+                    name: 'song'
+                }
+            ]).then(function(inquirerResponse){
+                parameter = inquirerResponse.song.replace(' ','+');
+                logInput();
+            });
             break;
 
-        case 'movie-this':
-            parameter = process.argv.slice(3).join('+');
+        case "Research a movie":
+            command = 'movie-this';
+            inquirer
+            .prompt([
+                {
+                    type: 'input',
+                    message: "What movie do you want to research?",
+                    name: 'movie'
+                }
+            ]).then(function(inquirerResponse){
+                parameter = inquirerResponse.movie.replace(' ','+');
+                logInput();
+            });
+            break;
+
+        case "Read command from text file":
+            command = 'do-what-it-says';
+            logInput();
             break;
 
     };
 };
+ 
+
+// function askConcert(){
+//     inquirer
+//         .prompt([
+//             {
+//                 type: 'input',
+//                 message: "What band or artist do you want to see?",
+//                 name: 'artist'
+//             }
+//         ]).then(function(inquirerResponse){
+//             parameter = inquirerResponse.artist.replace(' ','%20');
+//         })
+// }
 
 
-fs.appendFile("log.txt", "\n\nUser Inputs: " + command + ", " + parameterInput,function(err){
-    if(err) { return console.log(err);}
-});
+// function askSong(){
+//     inquirer
+//         .prompt([
+//             {
+//                 type: 'input',
+//                 message: "What song are you looking for?",
+//                 name: 'song'
+//             }
+//         ]).then(function(inquirerResponse){
+//             parameter = inquirerResponse.song.replace(' ','+');
+//         })
+// }
+
+// function askMovie(){
+//     inquirer
+//         .prompt([
+//             {
+//                 type: 'input',
+//                 message: "What movie do you want to research?",
+//                 name: 'movie'
+//             }
+//         ]).then(function(inquirerResponse){
+//             parameter = inquirerResponse.movie.replace(' ','+');
+//         })
+// }
+
+
+
+// function switchCase1(){
+//     switch (command){
+//         case 'concert-this':
+//             parameter = process.argv.slice(3).join('%20');
+//             break;
+
+//         case 'spotify-this-song':
+//             parameter = process.argv.slice(3).join('+')
+//             break;
+
+//         case 'movie-this':
+//             parameter = process.argv.slice(3).join('+');
+//             break;
+
+//     };
+// };
+
+function logInput(){
+    fs.appendFile("log.txt", "\n---------------------------------------------\nUser Inputs: " + command + ", " + parameter + "\nOutput:",function(err){
+        if(err) { return console.log(err);}
+    });
+    switchCase();
+    
+}
 
 
 
@@ -50,7 +171,7 @@ function getMovieData(){
     .then(function(response){
         output = "\n-----------------\nTitle:                  " + response.data.Title +"\nYear Released:          " + response.data.Year + "\nIMDB Rating:            " + response.data.imdbRating + "\nRotton Tomatoes Rating: " + response.data.Ratings[1].Value + "\nCountry produced:       " + response.data.Country + "\nLanguage:               " + response.data.Language + "\nPlot:                   " + response.data.Plot + "\nActor:                  " + response.data.Actors + "\n-----------------\n";
         console.log(output);
-        fs.appendFile("log.txt", "\nOutputs: " + output, function(err){
+        fs.appendFile("log.txt", output, function(err){
             if(err) { return console.log(err);}
         });
     })
@@ -72,7 +193,7 @@ function getConcertData(){
             let momentTime = moment(JS[i].datetime).format("MM/DD/YYYY  h:mm a");
             output = "\n-----------------\nYour Artist: " + JS[i].lineup + "\nName of Venue: " + JS[i].venue.name + "\nVenue Location: " + JS[i].venue.city + ", " + JS[i].venue.region + "\nDate of the Event: " + momentTime + "\n-----------------\n";
             console.log(output);
-            fs.appendFile("log.txt", "\nOutputs: " + output, function(err){
+            fs.appendFile("log.txt", output, function(err){
                 if(err) { return console.log(err);}
             }); 
         }
@@ -105,7 +226,7 @@ function getSongData(){
             for(j=0; j < trackArray.length; j++){
                 output = "\n-----------------\nArtist:  " + data.tracks.items[j].artists[0].name + "\nSong:    " + data.tracks.items[j].name + "\nPreview: " + data.tracks.items[j].preview_url + "\nAlbum:   " + data.tracks.items[j].album.name + "\n-----------------\n";
                 console.log(output);
-                fs.appendFile("log.txt", "\nOutputs: " + output, function(err){
+                fs.appendFile("log.txt", output, function(err){
                     if(err) { return console.log(err);}
                 });                 
             
@@ -178,6 +299,5 @@ function switchCase2(){
 
 
 
-//Code to run functions
 
-switchCase();
+
