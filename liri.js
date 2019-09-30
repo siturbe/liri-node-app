@@ -6,10 +6,12 @@ const spotify = new Spotify(keys.spotify);
 const axios = require("axios");
 const moment = require('moment');
 
-
+let output;
 
 let command = process.argv[2];
 let parameter;
+
+let parameterInput = process.argv.slice(3).join(' ');
 
 
 switchCase1();
@@ -33,6 +35,11 @@ function switchCase1(){
 };
 
 
+fs.appendFile("log.txt", "\n\nUser Inputs: " + command + ", " + parameterInput,function(err){
+    if(err) { return console.log(err);}
+});
+
+
 
 // OMDB MOVIE INFORMATION
 function getMovieData(){
@@ -41,16 +48,11 @@ function getMovieData(){
     axios
     .get(queryUrl)
     .then(function(response){
-        console.log("\n-----------------\n");
-        console.log("Title:                  " + response.data.Title);
-        console.log("Year Released:          " + response.data.Year);
-        console.log("IMDB Rating:            " + response.data.imdbRating);
-        console.log("Rotton Tomatoes Rating: " + response.data.Ratings[1].Value);
-        console.log("Country produced:       " + response.data.Country);
-        console.log("Language:               " + response.data.Language);
-        console.log("Plot:                   " + response.data.Plot);
-        console.log("Actor:                  " + response.data.Actors);
-        console.log("\n-----------------\n");
+        output = "\n-----------------\nTitle:                  " + response.data.Title +"\nYear Released:          " + response.data.Year + "\nIMDB Rating:            " + response.data.imdbRating + "\nRotton Tomatoes Rating: " + response.data.Ratings[1].Value + "\nCountry produced:       " + response.data.Country + "\nLanguage:               " + response.data.Language + "\nPlot:                   " + response.data.Plot + "\nActor:                  " + response.data.Actors + "\n-----------------\n";
+        console.log(output);
+        fs.appendFile("log.txt", "\nOutputs: " + output, function(err){
+            if(err) { return console.log(err);}
+        });
     })
     .catch(function(err){
         console.log(err);
@@ -67,13 +69,12 @@ function getConcertData(){
     .then(function(response){
         let JS = response.data;
         for (i=0; i < JS.length; i++){
-            console.log("\n-----------------\n");
-            console.log("Your Artist: " + JS[i].lineup);
-            console.log("Name of Venue: " + JS[i].venue.name);
-            console.log("Venue Location: " + JS[i].venue.city + ", " + JS[i].venue.region);
             let momentTime = moment(JS[i].datetime).format("MM/DD/YYYY  h:mm a");
-            console.log("Date of the Event: " + momentTime);  //if have time, return and improve date formatting
-            console.log("\n-----------------\n");
+            output = "\n-----------------\nYour Artist: " + JS[i].lineup + "\nName of Venue: " + JS[i].venue.name + "\nVenue Location: " + JS[i].venue.city + ", " + JS[i].venue.region + "\nDate of the Event: " + momentTime + "\n-----------------\n";
+            console.log(output);
+            fs.appendFile("log.txt", "\nOutputs: " + output, function(err){
+                if(err) { return console.log(err);}
+            }); 
         }
     })
     .catch(function(err){
@@ -102,16 +103,16 @@ function getSongData(){
         } else {
             let trackArray = data.tracks.items;
             for(j=0; j < trackArray.length; j++){
-                console.log("\n-----------------\n");
-                console.log("Artist:  " + data.tracks.items[j].artists[0].name);
-                console.log("Song:    " + data.tracks.items[j].name);
-                console.log("Preview: " + data.tracks.items[j].preview_url);
-                console.log("Album:   " + data.tracks.items[j].album.name);
-                console.log("\n-----------------\n");
+                output = "\n-----------------\nArtist:  " + data.tracks.items[j].artists[0].name + "\nSong:    " + data.tracks.items[j].name + "\nPreview: " + data.tracks.items[j].preview_url + "\nAlbum:   " + data.tracks.items[j].album.name + "\n-----------------\n";
+                console.log(output);
+                fs.appendFile("log.txt", "\nOutputs: " + output, function(err){
+                    if(err) { return console.log(err);}
+                });                 
+            
             }
         }
-    });
 
+    })
 }
 
 
