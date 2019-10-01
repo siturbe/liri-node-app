@@ -3,3 +3,7 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 
 LIRI was originally a command line node app that takes in parameters and gives you back data, but we improved the user interface so that it is clear to any users which commands Liri can receive.
 
+Video of App Running:
+https://www.youtube.com/watch?v=mdrCpeMt8k4
+
+
