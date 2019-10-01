@@ -1,33 +1,5 @@
 
 ---------------------------------------------
-User Inputs: movie-this, Star+Wars
-Output:
------------------
-Title:                  Star Wars: Episode IV - A New Hope
-Year Released:          1977
-IMDB Rating:            8.6
-Rotton Tomatoes Rating: 93%
-Country produced:       USA
-Language:               English
-Plot:                   Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
-Actor:                  Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
------------------
-
----------------------------------------------
-User Inputs: movie-this, Braveheart
-Output:
------------------
-Title:                  Braveheart
-Year Released:          1995
-IMDB Rating:            8.3
-Rotton Tomatoes Rating: 77%
-Country produced:       USA
-Language:               English, French, Latin, Scottish Gaelic, Italian
-Plot:                   When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
-Actor:                  James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
------------------
-
----------------------------------------------
 User Inputs: concert-this, Billie%20Eilish
 Output:
 -----------------
@@ -39,16 +11,16 @@ Date of the Event: 10/05/2019  7:00 pm
 
 -----------------
 Your Artist: Billie Eilish
-Name of Venue: BOK Center
-Venue Location: Tulsa, OK
-Date of the Event: 10/07/2019  7:00 pm
+Name of Venue: Toyota Center
+Venue Location: Houston, TX
+Date of the Event: 10/10/2019  7:00 pm
 -----------------
 
 -----------------
 Your Artist: Billie Eilish
-Name of Venue: American Airlines Center
-Venue Location: Dallas, TX
-Date of the Event: 10/08/2019  7:00 pm
+Name of Venue: BOK Center
+Venue Location: Tulsa, OK
+Date of the Event: 10/07/2019  7:00 pm
 -----------------
 
 -----------------
@@ -60,16 +32,9 @@ Date of the Event: 10/12/2019  7:00 pm
 
 -----------------
 Your Artist: Billie Eilish
-Name of Venue: Toyota Center
-Venue Location: Houston, TX
-Date of the Event: 10/10/2019  7:00 pm
------------------
-
------------------
-Your Artist: Billie Eilish
-Name of Venue: American Airlines Arena
-Venue Location: Miami, FL
-Date of the Event: 03/09/2020  7:00 pm
+Name of Venue: American Airlines Center
+Venue Location: Dallas, TX
+Date of the Event: 10/08/2019  7:00 pm
 -----------------
 
 -----------------
@@ -77,6 +42,13 @@ Your Artist: Billie Eilish
 Name of Venue: Corona Capital
 Venue Location: Mexico City, 
 Date of the Event: 11/17/2019  7:00 pm
+-----------------
+
+-----------------
+Your Artist: Billie Eilish
+Name of Venue: American Airlines Arena
+Venue Location: Miami, FL
+Date of the Event: 03/09/2020  7:00 pm
 -----------------
 
 -----------------
@@ -367,7 +339,164 @@ Date of the Event: 07/27/2020  7:00 pm
 -----------------
 
 ---------------------------------------------
-User Inputs: spotify-this-song, Elderly+Woman Behind the Counter in a Small Town
+User Inputs: movie-this, Star+Wars
+Output:
+-----------------
+Title:                  Star Wars: Episode IV - A New Hope
+Year Released:          1977
+IMDB Rating:            8.6
+Rotton Tomatoes Rating: 93%
+Country produced:       USA
+Language:               English
+Plot:                   Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+Actor:                  Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+-----------------
+
+---------------------------------------------
+User Inputs: spotify-this-song, Holier+Than Thou
+Output:
+-----------------
+Artist:  Metallica
+Song:    Holier Than Thou
+Preview: https://p.scdn.co/mp3-preview/c861ec651695a11c975b2f73e831bd549ed02e37?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Metallica
+-----------------
+
+-----------------
+Artist:  Jillian Jacqueline
+Song:    Holier Than Thou
+Preview: https://p.scdn.co/mp3-preview/d4521cd17f3b0f5ccd85dbad48bfc521a0ccaa88?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Side A
+-----------------
+
+-----------------
+Artist:  Depeche Mode
+Song:    Personal Jesus (Holier Than Thou Approach)
+Preview: https://p.scdn.co/mp3-preview/74730d074988eca68dae8fef8e15d829129cc1cc?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Personal Jesus
+-----------------
+
+-----------------
+Artist:  Tech N9ne
+Song:    Holier Than Thou
+Preview: https://p.scdn.co/mp3-preview/5f1b12f33e063eef1d7fe2b038e7113a8c823928?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Killer
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Holier-than-thou
+Preview: https://p.scdn.co/mp3-preview/5464e3ef3084c1b54263796494950c48775d3f77?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Senses
+Preview: https://p.scdn.co/mp3-preview/c44c9ebb03bee244f5d31073ef11e903cffec7b0?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    The Porch Swing Song
+Preview: https://p.scdn.co/mp3-preview/d99cee62a1cadbffa3f4f6b2e6ee2ade6a6f62f1?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    A Little Too Late
+Preview: https://p.scdn.co/mp3-preview/97ab7b74f435c6d028632c4df91346b83df1b82d?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Killin' U2
+Preview: https://p.scdn.co/mp3-preview/6a33a744242abe8b2f918035e4de35d06a5ced62?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Right Or Wrong
+Preview: https://p.scdn.co/mp3-preview/c475c757fe3178750edabb1234f6ffa7c9eac782?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Jesus Loves Bad Boys Like Me
+Preview: https://p.scdn.co/mp3-preview/1687ffc8395e4e3543d27a325f4cb5893ce2dc1c?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    The Other You
+Preview: https://p.scdn.co/mp3-preview/8e2a2dcfcb2e89663f1988b9011c782230ea4b4b?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Dreadful Selfish Crime
+Preview: https://p.scdn.co/mp3-preview/f1eda8150e263edf447f915b2c1f95976be3d158?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Content
+Preview: https://p.scdn.co/mp3-preview/3beba9cf1a216c14e80bdb59c9fe781f426ca1f9?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Balinese
+Preview: https://p.scdn.co/mp3-preview/db535021a4597ffbffa8d2d833bda79aebb26d7b?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  King Virtue
+Song:    Holier Than Thou
+Preview: https://p.scdn.co/mp3-preview/bb8ad9fa80c065845260eb5036215461c80eefef?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Ephesians
+-----------------
+
+-----------------
+Artist:  The Pear Ratz
+Song:    Walk Softly On This Heart Of Mine
+Preview: https://p.scdn.co/mp3-preview/22f4d1aae1d21a0d021f38b7ef54c4caf0975645?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Holier-Than-Thou
+-----------------
+
+-----------------
+Artist:  Arakara
+Song:    Holier Than Thou
+Preview: https://p.scdn.co/mp3-preview/d408a2545fa4c886955d493155ae77b013adba9a?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Burial Ground
+-----------------
+
+-----------------
+Artist:  Nunsense 30th Anniversary Cast
+Song:    Holier Than Thou
+Preview: https://p.scdn.co/mp3-preview/bb575808a9e6ccaec812f8fe51e9a2194cb0bdb5?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Nunsense: 30th Anniversary Cast Recording
+-----------------
+
+-----------------
+Artist:  Depeche Mode
+Song:    Personal Jesus - Holier Than Thou Approach
+Preview: https://p.scdn.co/mp3-preview/ea1f5c1d4ea7cd9fe0d53da45530e8f277a49b08?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Depeche Mode - Singles Box 4
+-----------------
+
+---------------------------------------------
+User Inputs: do-what-it-says, Holier+Than Thou
 Output:
 -----------------
 Artist:  Pearl Jam
@@ -442,15 +571,15 @@ Album:   Les Tout - Petits Ecoutent Pearl Jam
 -----------------
 Artist:  Sweet Little Band
 Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/9465e1f7ffa265adb0e01769747013533791418b?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Babies Go Pearl Jam
+Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Pearl Jam Para bebês
 -----------------
 
 -----------------
 Artist:  Sweet Little Band
 Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Para bebês
+Preview: https://p.scdn.co/mp3-preview/9465e1f7ffa265adb0e01769747013533791418b?cid=589d93c1d907440ea21b7ca87a5b824b
+Album:   Babies Go Pearl Jam
 -----------------
 
 -----------------
@@ -510,144 +639,15 @@ Album:   Smooth Times Play Pearl Jam Chill Out
 -----------------
 
 ---------------------------------------------
-User Inputs: do-what-it-says, Elderly+Woman Behind the Counter in a Small Town
+User Inputs: do-what-it-says, undefined
 Output:
 -----------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter in a Small Town (Remastered)
-Preview: https://p.scdn.co/mp3-preview/b82ade2886065e67171e382ee804f0559628264d?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Vs.
------------------
-
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter in a Small Town - Acoustic Version
-Preview: https://p.scdn.co/mp3-preview/d0645a207259ef589e29859d9c32b9b5407c58c1?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   go
------------------
-
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/b52cd2197abc249f15f2aa98fbdc72f82dc20ed4?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   rearviewmirror (greatest hits 1991-2003)
------------------
-
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind the Counter In a Small Town - Live at Coral Sky Amphitheatre, West Palm Beach, FL - September 1998
-Preview: https://p.scdn.co/mp3-preview/2ae1d71900ce62db9babbb08a1283aa0677575f7?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Live On Two Legs
------------------
-
------------------
-Artist:  Pearl Jam
-Song:    Elderly Woman Behind The Counter In A Small Town - Live
-Preview: null
-Album:   Let's Play Two (Live / Original Motion Picture Soundtrack)
------------------
-
------------------
-Artist:  Twinkle Twinkle Little Rock Star
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/852cef96dab62eb61e3abc50e8d48f06a30763a0?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Lullaby Versions of Pearl Jam
------------------
-
------------------
-Artist:  Charlotte Martin
-Song:    Elderly Woman Behind the Counter In a Small Town - Studio
-Preview: https://p.scdn.co/mp3-preview/a7ffcef06fb484502c34b1567153de7bdc9ec120?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Reproductions
------------------
-
------------------
-Artist:  Vitamin String Quartet
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/06e77cb11c737984af342926cb27b0cfe5337253?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Mad World: Strung Out On Pearl Jam
------------------
-
------------------
-Artist:  Vitamin String Quartet
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/2a1e07a142f0cdee370a288cf867fae9c6f5773f?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   VSQ Performs Pearl Jam
------------------
-
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Les Tout - Petits Ecoutent Pearl Jam
------------------
-
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/9465e1f7ffa265adb0e01769747013533791418b?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Babies Go Pearl Jam
------------------
-
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Para bebês
------------------
-
------------------
-Artist:  Tom Hummer
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/2fb4a8ef05e7e8b7b951419b6b3bb7b5abccb417?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Dedications (Covers)
------------------
-
------------------
-Artist:  Tony Hubbard
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/87d752ec875e1967341403769c00e421cb8eca0d?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Elderly Woman Behind the Counter in a Small Town
------------------
-
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Per I Bambini
------------------
-
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/30b752e032e0c93eda8dcd816406823236a9b945?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Für Babys
------------------
-
------------------
-Artist:  The Belle Weather
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/f88b4510e8dc63638759553cd5fa8711afdba63f?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Don't Let Your Blood Run Still
------------------
-
------------------
-Artist:  Sweet Little Band
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/9465e1f7ffa265adb0e01769747013533791418b?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Pearl Jam Para Bebes
------------------
-
------------------
-Artist:  Piano Tribute Players
-Song:    Elderly Woman Behind The Counter In A Small Town
-Preview: https://p.scdn.co/mp3-preview/e76243cef7f09980cb84eb5211a021a14f012199?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Piano Tribute To Pearl Jam
------------------
-
------------------
-Artist:  Smooth Times
-Song:    Elderly Woman Behind the Counter in a Small Town
-Preview: https://p.scdn.co/mp3-preview/746ac2b732eb17e2459912adfe00dfcddfacf9e5?cid=589d93c1d907440ea21b7ca87a5b824b
-Album:   Smooth Times Play Pearl Jam Chill Out
+Title:                  Braveheart
+Year Released:          1995
+IMDB Rating:            8.3
+Rotton Tomatoes Rating: 77%
+Country produced:       USA
+Language:               English, French, Latin, Scottish Gaelic, Italian
+Plot:                   When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.
+Actor:                  James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
 -----------------
