@@ -13,28 +13,28 @@ let command;
 let parameter;
 
 
+function startLiri(){
+    console.log("Hi!  I'm Liri!  I can help you with a few search requests. \n");
 
-console.log("Hi!  I'm Liri!  I can help you with a few search requests. \n");
-
-inquirer
-    .prompt([
-        {
-            type: "list",
-            message: "Which of the following would you want me to help you with? \n",
-            choices:[
-                "Find a concert",
-                "Research a movie",
-                "Find a song on Spotify",
-                "Read command from text file"
-            ],
-            name: 'selection'
-        }
-    ])
-    .then(function(inquirerResponse){
-        choice = inquirerResponse.selection;
-        switchChoice();  
-    })
-
+    inquirer
+        .prompt([
+            {
+                type: "list",
+                message: "Which of the following would you want me to help you with? \n",
+                choices:[
+                    "Find a concert",
+                    "Research a movie",
+                    "Find a song on Spotify",
+                    "Read command from text file"
+                ],
+                name: 'selection'
+            }
+        ])
+        .then(function(inquirerResponse){
+            choice = inquirerResponse.selection;
+            switchChoice();  
+        })
+}
 
 
 function switchChoice(){
@@ -93,64 +93,7 @@ function switchChoice(){
 };
  
 
-// function askConcert(){
-//     inquirer
-//         .prompt([
-//             {
-//                 type: 'input',
-//                 message: "What band or artist do you want to see?",
-//                 name: 'artist'
-//             }
-//         ]).then(function(inquirerResponse){
-//             parameter = inquirerResponse.artist.replace(' ','%20');
-//         })
-// }
 
-
-// function askSong(){
-//     inquirer
-//         .prompt([
-//             {
-//                 type: 'input',
-//                 message: "What song are you looking for?",
-//                 name: 'song'
-//             }
-//         ]).then(function(inquirerResponse){
-//             parameter = inquirerResponse.song.replace(' ','+');
-//         })
-// }
-
-// function askMovie(){
-//     inquirer
-//         .prompt([
-//             {
-//                 type: 'input',
-//                 message: "What movie do you want to research?",
-//                 name: 'movie'
-//             }
-//         ]).then(function(inquirerResponse){
-//             parameter = inquirerResponse.movie.replace(' ','+');
-//         })
-// }
-
-
-
-// function switchCase1(){
-//     switch (command){
-//         case 'concert-this':
-//             parameter = process.argv.slice(3).join('%20');
-//             break;
-
-//         case 'spotify-this-song':
-//             parameter = process.argv.slice(3).join('+')
-//             break;
-
-//         case 'movie-this':
-//             parameter = process.argv.slice(3).join('+');
-//             break;
-
-//     };
-// };
 
 function logInput(){
     fs.appendFile("log.txt", "\n---------------------------------------------\nUser Inputs: " + command + ", " + parameter + "\nOutput:",function(err){
@@ -174,6 +117,22 @@ function getMovieData(){
         fs.appendFile("log.txt", output, function(err){
             if(err) { return console.log(err);}
         });
+
+        inquirer
+        .prompt([
+            {
+                type: "confirm",
+                message: "Would you like to make another request? \n",
+                name: 'confirm',
+                default: true
+            }
+        ])
+        .then(function(inquirerResponse){
+            if(inquirerResponse.confirm){
+                startLiri();
+            } else { console.log("Goodbye") }  
+        })
+
     })
     .catch(function(err){
         console.log(err);
@@ -197,6 +156,22 @@ function getConcertData(){
                 if(err) { return console.log(err);}
             }); 
         }
+
+        inquirer
+        .prompt([
+            {
+                type: "confirm",
+                message: "Would you like to make another request? \n",
+                name: 'confirm',
+                default: true
+            }
+        ])
+        .then(function(inquirerResponse){
+            if(inquirerResponse.confirm){
+                startLiri();
+            } else { console.log("Goodbye") }  
+        })
+
     })
     .catch(function(err){
         console.log(err);
@@ -231,6 +206,22 @@ function getSongData(){
                 });                 
             
             }
+
+            inquirer
+            .prompt([
+                {
+                    type: "confirm",
+                    message: "Would you like to make another request? \n",
+                    name: 'confirm',
+                    default: true
+                }
+            ])
+            .then(function(inquirerResponse){
+                if(inquirerResponse.confirm){
+                    startLiri();
+                } else { console.log("Goodbye") }  
+            })
+
         }
 
     })
@@ -301,3 +292,4 @@ function switchCase2(){
 
 
 
+startLiri();
